@@ -56,7 +56,7 @@
               <div class="text">
                 <p>waffle</p>
                 <p>waffle with berries</p>
-                <a href="">$6.50</a>
+                <a href="#">$6.50</a>
               </div>
             </div>
             <div class="items">
@@ -96,7 +96,7 @@
               <div class="text">
                 <p>Crème Brûlée</p>
                 <p>Vanilla Bean Crème Brûlée</p>
-                <a href="">$7.00</a>
+                <a href="#">$7.00</a>
               </div>
             </div>
             <div class="items">
@@ -136,7 +136,7 @@
               <div class="text">
                 <p>Macaron</p>
                 <p>Macaron Mix of Five</p>
-                <a href="">$8.00</a>
+                <a href="#">$8.00</a>
               </div>
             </div>
             <div class="items">
@@ -176,7 +176,7 @@
               <div class="text">
                 <p>Tiramisu</p>
                 <p>Classic Tiramisu</p>
-                <a href="">$6.50</a>
+                <a href="#">$6.50</a>
               </div>
             </div>
             <div class="items">
@@ -216,7 +216,7 @@
               <div class="text">
                 <p>Baklava</p>
                 <p>Pistachio Baklava</p>
-                <a href="">$4.00</a>
+                <a href="#">$4.00</a>
               </div>
             </div>
             <div class="items">
@@ -256,7 +256,7 @@
               <div class="text">
                 <p>Pie</p>
                 <p>Lemon Merigue Pie</p>
-                <a href="">$5.00</a>
+                <a href="#">$5.00</a>
               </div>
             </div>
 
@@ -297,7 +297,7 @@
               <div class="text">
                 <p>Cake</p>
                 <p>Red Velvet Cake</p>
-                <a href="">$4.50</a>
+                <a href="#">$4.50</a>
               </div>
             </div>
 
@@ -338,7 +338,7 @@
               <div class="text">
                 <p>brownie</p>
                 <p>Salted Caramel brownie</p>
-                <a href="">$5.50</a>
+                <a href="#">$5.50</a>
               </div>
             </div>
 
@@ -379,22 +379,34 @@
               <div class="text">
                 <p>Panna Cotta</p>
                 <p>Vannila Panna Cotta</p>
-                <a href="">$6.50</a>
+                <a href="#">$6.50</a>
               </div>
             </div>
           </div>
 
           <div class="right">
-            <form action="">
-              <p>Your Cart(0)</p>
-              <img
-                src="./assets/images/illustration-empty-cart.svg"
-                alt=""
-                srcset=""
-                class="empty"
-              />
-              <p>your added items will appear here</p>
-            </form>
+            <div class="cart-container">
+              <h3>Your Cart (0)</h3>
+              <div class="empty-cart">
+                <img
+                  src="./assets/images/illustration-empty-cart.svg"
+                  alt=""
+                  class="empty"
+                />
+                <p>added item to will appear here</p>
+              </div>
+              <div class="cart-items" style="display: none">
+                <!-- Cart items will be inserted here by index.js -->
+              </div>
+              <div class="cart-footer" style="display: none">
+                <div class="order-total">
+                  <p>Order Total</p>
+                  <p>$0.00</p>
+                </div>
+                <p class="carbon-neutral">This is a carbon-neutral delivery</p>
+                <button class="confirm-order">Confirm Order</button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
